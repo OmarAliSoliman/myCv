@@ -1,0 +1,363 @@
+@import "https://fonts.googleapis.com/css?family=Exo&display=swap";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #DDD; }
+
+.info .row {
+  margin: 0; }
+  .info .row .col-lg-3, .info .row .col-lg-8, .info .row .col-lg-1 {
+    padding: 0 !important; }
+.info .p-over {
+  position: relative; }
+  .info .p-over .overlay:hover {
+    opacity: 0; }
+.info .my-pic img {
+  width: 100%; }
+.info .info-name {
+  height: 179.75px;
+  background-color: #444; }
+  .info .info-name h6 {
+    line-height: 179.75px; }
+.info .info-slag {
+  font-family: "Exo", sans-serif;
+  height: 161px;
+  background-color: #333; }
+  .info .info-slag h6 {
+    font-size: 45px;
+    line-height: 161px; }
+    .info .info-slag h6 span {
+      color: #3498DB; }
+.info .cv-btn button {
+  width: 100%;
+  height: 341px;
+  background-color: #777;
+  border: none;
+  font-size: 40px;
+  color: #fff; }
+
+nav {
+  background-color: #fff !important;
+  z-index: 99 !important; }
+  nav .navbar-nav a.nav-link {
+    padding: 12px !important;
+    padding-right: 2.5rem !important; }
+  nav .navbar-nav {
+    font-family: "Exo", sans-serif; }
+    nav .navbar-nav a {
+      color: #fff !important;
+      font-size: 18px !important;
+      transition: all .5s linear; }
+    nav .navbar-nav a:nth-of-type(2) {
+      color: #3A66E6 !important; }
+      nav .navbar-nav a:nth-of-type(2):hover {
+        color: #fff !important;
+        background-color: #3A66E6 !important; }
+    nav .navbar-nav a:nth-of-type(3) {
+      color: #1BC9E4 !important; }
+      nav .navbar-nav a:nth-of-type(3):hover {
+        color: #fff !important;
+        background-color: #1BC9E4 !important; }
+    nav .navbar-nav a:nth-of-type(4) {
+      color: #FF754A !important; }
+      nav .navbar-nav a:nth-of-type(4):hover {
+        color: #fff !important;
+        background-color: #FF754A !important; }
+    nav .navbar-nav a:nth-of-type(5) {
+      color: #FF4A4A !important; }
+      nav .navbar-nav a:nth-of-type(5):hover {
+        color: #fff !important;
+        background-color: #FF4A4A !important; }
+    nav .navbar-nav a:nth-of-type(6) {
+      color: #FFC455 !important; }
+      nav .navbar-nav a:nth-of-type(6):hover {
+        color: #fff !important;
+        background-color: #FFC455 !important; }
+    nav .navbar-nav a:last-of-type {
+      color: #9B59B6 !important; }
+      nav .navbar-nav a:last-of-type:hover {
+        color: #fff !important;
+        background-color: #9B59B6 !important; }
+
+.about {
+  font-family: "Exo", sans-serif; }
+  .about h6 {
+    border: 1px solid #3A66E6;
+    background-color: #3A66E6; }
+  .about .social ul li {
+    float: left;
+    width: 30px;
+    border-bottom: 2px solid #CCC;
+    margin-right: 8px;
+    text-align: center;
+    transition: all 0.5s ease; }
+    .about .social ul li a {
+      color: #3A66E6;
+      width: 100%; }
+    .about .social ul li:hover {
+      border-bottom: 2px solid #3A66E6; }
+
+.education-skills {
+  font-family: "Exo", sans-serif; }
+  .education-skills h6.label {
+    border: 1px solid #1BC9E4;
+    background-color: #1BC9E4; }
+  .education-skills .education .education-level {
+    border-left: 2px solid #DDD;
+    position: relative; }
+    .education-skills .education .education-level ul {
+      margin-left: 20px; }
+      .education-skills .education .education-level ul li:nth-of-type(2) {
+        font-weight: bold;
+        color: #1BC9E4; }
+  .education-skills .skills {
+    overflow: hidden; }
+    .education-skills .skills h6.label2 {
+      background-color: #FF754A;
+      border: 1px solid #FF754A; }
+    .education-skills .skills .skill-pogress .progress {
+      margin-top: 10px; }
+      .education-skills .skills .skill-pogress .progress span {
+        display: inline-block;
+        text-align: left !important;
+        margin-left: 10px; }
+      .education-skills .skills .skill-pogress .progress .html-css {
+        background-color: #EA6227; }
+      .education-skills .skills .skill-pogress .progress .sass {
+        background-color: #C96196; }
+      .education-skills .skills .skill-pogress .progress .js {
+        background-color: #F5DE19; }
+      .education-skills .skills .skill-pogress .progress .jq {
+        background-color: #333333; }
+      .education-skills .skills .skill-pogress .progress .bootstrap {
+        background-color: #563D7C; }
+      .education-skills .skills .skill-pogress .progress .react {
+        background-color: #5ED4F4; }
+    .education-skills .skills .skill-pogress .skill-icon ul li {
+      float: left;
+      width: 10%;
+      margin-top: 10px; }
+      .education-skills .skills .skill-pogress .skill-icon ul li i {
+        font-size: 25px;
+        color: #c0bdbd;
+        transition: all 0.5s ease-in-out; }
+        .education-skills .skills .skill-pogress .skill-icon ul li i:hover {
+          color: #FF754A; }
+
+.experince {
+  overflow: hidden; }
+  .experince h6 {
+    background-color: #FF4A4A;
+    border: 1px solid #FF4A4A; }
+  .experince .ex, .experince .cirtificate {
+    width: 50%;
+    float: left; }
+  .experince .ex {
+    font-family: "Exo", sans-serif; }
+    .experince .ex .ex-ul {
+      border-left: 2px solid #DDD; }
+    .experince .ex ul {
+      position: relative;
+      margin-left: 20px; }
+      .experince .ex ul li:nth-of-type(2) {
+        color: #FF4A4A;
+        font-weight: bold;
+        text-transform: capitalize;
+        font-size: 18px; }
+      .experince .ex ul li:first-of-type::before {
+        content: "\f02d" !important;
+        left: -35px !important;
+        background-color: #FF4A4A !important; }
+  .experince .cirtificate {
+    font-family: "Exo", sans-serif; }
+    .experince .cirtificate .list-unstyled li {
+      margin: 10px 0 0 0;
+      text-transform: capitalize;
+      transition: all 0.5s ease; }
+      .experince .cirtificate .list-unstyled li::before {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f101";
+        margin-right: 10px;
+        color: #FF4A4A; }
+      .experince .cirtificate .list-unstyled li:hover {
+        transform: translateX(10px); }
+      .experince .cirtificate .list-unstyled li a {
+        text-decoration: none; }
+
+.my-work {
+  font-family: "Exo", sans-serif; }
+  .my-work h6 {
+    background-color: #FFC455;
+    border: 1px solid #FFC455; }
+  .my-work .work .card {
+    width: 24%;
+    float: left;
+    margin-right: 1%;
+    margin-top: 10px; }
+    .my-work .work .card a:first-of-type {
+      width: 30%; }
+    .my-work .work .card a {
+      width: 20%; }
+  .my-work .work2 .card {
+    width: 24%;
+    float: right;
+    margin-right: 1%;
+    margin-top: 10px; }
+
+.comment {
+  font-family: "Exo", sans-serif; }
+  .comment h6.comment-label {
+    background-color: #9B59B6;
+    border: 1px solid #9B59B6; }
+  .comment .comment-container {
+    height: 250px;
+    overflow-y: scroll; }
+    .comment .comment-container .comme {
+      border: 1px solid #DDD;
+      padding-left: 10px;
+      padding-top: 10px;
+      text-transform: capitalize;
+      border-radius: 5px;
+      margin-top: 10px; }
+      .comment .comment-container .comme h6 {
+        color: #9B59B6;
+        font-weight: bold; }
+  .comment .leave-comment {
+    margin-top: 20px; }
+    .comment .leave-comment input {
+      border-radius: 5px;
+      border: 1px solid #DDD;
+      padding: 10px; }
+    .comment .leave-comment input:nth-of-type(2) {
+      width: 60%; }
+    .comment .leave-comment .sent-comment {
+      background-color: #9B59B6;
+      border: 1px solid #9B59B6;
+      color: #fff; }
+
+@media (max-width: 800px) {
+  .info .my-pic img {
+    width: 100%;
+    margin-bottom: -120px; }
+  .info .cv-btn button {
+    height: 150px !important; }
+
+  .my-work .work .card {
+    width: 49%;
+    float: left;
+    margin-right: 1%; }
+  .my-work .work2 .card {
+    width: 49%;
+    float: right;
+    margin-right: 1%; } }
+@media (max-width: 576px) {
+  .info .my-pic img {
+    width: 100%;
+    margin-bottom: -100px; }
+  .info .info-slag, .info .info-name {
+    height: 100px; }
+    .info .info-slag h6, .info .info-name h6 {
+      line-height: 100px;
+      font-size: 30px; }
+  .info .cv-btn button {
+    height: 100px !important; }
+  .info .cv-btn button {
+    height: 100px !important; }
+
+  .experince .ex, .experince .cirtificate {
+    width: 100%;
+    float: none; }
+
+  .my-work .work .card {
+    width: 100%;
+    float: none; }
+  .my-work .work2 .card {
+    width: 100%;
+    float: none; } }
+.nav-sticky {
+  position: sticky;
+  top: 0; }
+
+.info .p-over .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  opacity: 0.3;
+  background-color: #000; }
+
+.info .info-name h6, .info .info-slag h6 {
+  margin-left: 20px;
+  color: #fff; }
+
+.about, .education-skills .education, .education-skills .skills, .experince, .my-work, .comment {
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  border: 1px solid #DDD;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  border-radius: .25rem;
+  background-color: #fff;
+  box-sizing: border-box;
+  margin-top: 10px; }
+
+.about h6, .education-skills h6.label, .education-skills .skills h6.label2, .experince h6, .my-work h6, .comment h6.comment-label {
+  font-family: "Exo", sans-serif;
+  margin-left: -24.5px !important;
+  border-top: 0;
+  display: inline-block;
+  font-size: 25px;
+  padding: 15px;
+  color: #fff; }
+
+.about span, .education-skills span.slag, .experince span, .my-work span, .comment span {
+  font-family: "Exo", sans-serif;
+  letter-spacing: 10px;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 25px;
+  display: inline-block;
+  margin-bottom: 10px; }
+
+.education-skills .education .education-level ul li:first-of-type::before, .experince .ex ul li:first-of-type::before {
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f303";
+  width: 30px;
+  height: 30px;
+  left: -16px;
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+  border-radius: 50%;
+  margin-top: -3px;
+  background-color: #1BC9E4; }
+
+.my-work .work .card .fa-thumbs-up {
+  color: #FFC455;
+  border: 1px solid #FFC455;
+  width: 20%;
+  padding: .375rem .75rem;
+  height: 36px;
+  background-color: #FFC455;
+  color: #fff;
+  border-radius: 5px;
+  text-align: center !important; }
+
+.my-work .work .card strong {
+  display: inline-block;
+  margin-left: 5px;
+  color: #FFC455;
+  border: 1px solid #FFC455;
+  width: 20%;
+  padding: .250rem .74rem;
+  height: 36px;
+  color: #000;
+  border-radius: 5px;
+  text-align: center !important; }
+
+/*# sourceMappingURL=style.css.map */

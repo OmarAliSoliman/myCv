@@ -1,0 +1,596 @@
+@import "https://fonts.googleapis.com/css?family=Exo&display=swap";
+$mainFont: 'Exo', sans-serif;
+$heightInfo: 359.5px;
+$color1: #3A66E6;
+$color2: #1BC9E4;
+$color3: #FF754A;
+$color4: #FF4A4A;
+$color5: #FFC455;
+$color6: #9B59B6;
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #DDD;
+}
+
+// start info and information
+.info{
+  .row{
+    margin: 0;
+    .col-lg-3, .col-lg-8, .col-lg-1{
+      padding: 0 !important;
+    }
+  }
+  .p-over{
+    position: relative;
+    .overlay{
+      @extend %overlay;
+      &:hover{
+        opacity: 0;
+      }
+    }
+  }
+  .my-pic{
+    img{
+      width: 100%;
+    }
+  }
+  .info-name{
+    height: $heightInfo/2 ;
+    background-color: #444;
+    h6{
+      @extend %infoh6Style;
+      line-height: $heightInfo/2;
+    }
+  }
+  .info-slag{
+    font-family: $mainFont;
+    height: 161px ;
+    background-color: #333;
+    h6{
+      @extend %infoh6Style;
+      font-size: 45px;
+      line-height: 161px;
+      span{
+        color: #3498DB;
+      }
+    }
+  }
+  .cv-btn{
+    button{
+      width: 100%;
+      height: 341px;
+      background-color: #777;
+      border: none;
+      font-size: 40px;
+      color: #fff;
+    }
+  }
+}
+
+// start nav bar
+nav{
+  background-color: #fff !important;
+  z-index: 99 !important;
+  .navbar-nav a.nav-link{
+    padding: 12px !important;
+    padding-right: 2.5rem !important;
+  }
+  .navbar-nav{
+    font-family: $mainFont;
+    a{
+      color: #fff !important;
+      font-size: 18px !important;
+      transition: all .5s linear;
+    }
+    a:nth-of-type(2){
+      color: $color1 !important;
+      &:hover{
+        color: #fff !important;
+        background-color: $color1 !important;
+      }
+    }
+    a:nth-of-type(3){
+      color: $color2 !important;
+      &:hover{
+        color: #fff !important;
+        background-color: $color2 !important;
+      }
+    }
+    a:nth-of-type(4){
+      color: $color3 !important;
+      &:hover{
+        color: #fff !important;
+        background-color: $color3 !important;
+      }
+    }
+    a:nth-of-type(5){
+      color: $color4 !important;
+      &:hover{
+        color: #fff !important;
+        background-color: $color4 !important;
+      }
+    }
+    a:nth-of-type(6){
+      color: $color5 !important;
+      &:hover{
+        color: #fff !important;
+        background-color: $color5 !important;
+      }
+    }
+    a:last-of-type{
+      color: $color6 !important;
+      &:hover{
+        color: #fff !important;
+        background-color: $color6 !important;
+      }
+    }
+  }
+}
+
+
+// start about
+.about{
+  font-family: $mainFont;
+  @extend %boxShadow;
+  h6{
+    @extend %labelforSection;
+    border: 1px solid $color1;
+    background-color: $color1;
+  }
+  span{
+   @extend %slagOfSection;
+  }
+  .social{
+    ul{
+      li{
+        float: left;
+        width: 30px;
+        border-bottom: 2px solid #CCC;
+        margin-right: 8px;
+        text-align: center;
+        transition: all 0.5s ease;
+        a{
+          color: $color1;
+          width: 100%;
+        }
+        &:hover{
+          border-bottom: 2px solid $color1;
+        }
+      }
+    }
+  }
+}
+
+// start education
+.education-skills{
+  font-family: $mainFont;
+  h6.label{
+    @extend %labelforSection;
+    border: 1px solid $color2;
+    background-color: $color2;
+  }
+  span.slag{
+    @extend %slagOfSection;
+  }
+  .education{
+    @extend %boxShadow;
+    .education-level{
+      border-left: 2px solid #DDD;
+      position: relative;
+      ul{
+        margin-left: 20px;
+        li:first-of-type{
+          &::before{
+           @extend %fontAwesomeBeforeLi;
+          }
+        }
+        li:nth-of-type(2){
+          font-weight: bold;
+          color: $color2;
+        }
+      }
+    }
+  }
+  .skills{
+    overflow: hidden;
+    @extend %boxShadow;
+    h6.label2{
+      @extend %labelforSection;
+      background-color: $color3;
+      border: 1px solid $color3;
+    }
+    .skill-pogress{
+      .progress{
+        margin-top: 10px;
+        span{
+          display: inline-block;
+          text-align: left !important;
+          margin-left: 10px;
+        }
+        .html-css{
+          background-color: #EA6227;
+        }
+        .sass{
+          background-color: #C96196;
+        }
+        .js{
+          background-color: #F5DE19;
+        }
+        .jq{
+          background-color: #333333;
+        }
+        .bootstrap{
+          background-color: #563D7C;
+        }
+        .react{
+          background-color: #5ED4F4;
+        }
+      }
+      .skill-icon{
+        ul{
+          li{
+            float: left;
+            width: 10%;
+            margin-top: 10px;
+            i{
+              font-size: 25px;
+              color: rgb(192, 189, 189);
+              transition: all 0.5s ease-in-out;
+              &:hover{
+                color: $color3;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// start experince
+.experince{
+  overflow: hidden;
+  @extend %boxShadow;
+  h6{
+    @extend %labelforSection;
+    background-color: $color4;
+    border: 1px solid $color4;
+  }
+  span{
+    @extend %slagOfSection;
+  }
+  .ex, .cirtificate{
+    width: 50%;
+    float: left;
+  }
+  .ex{
+    font-family: $mainFont;
+    .ex-ul{
+      border-left: 2px solid #DDD;
+    }
+    ul{
+      position: relative;
+      margin-left: 20px;
+      li:nth-of-type(2){
+        color: $color4;
+        font-weight: bold;
+        text-transform: capitalize;
+        font-size: 18px;
+      }
+      li:first-of-type{
+        &::before{
+          @extend %fontAwesomeBeforeLi;
+          content: "\f02d" !important;
+          left: -35px !important;
+          background-color: $color4 !important;
+        }
+      }
+    }
+  }
+  .cirtificate{
+    font-family: $mainFont;
+    .list-unstyled{
+      li{
+        margin: 10px 0 0 0;
+        text-transform: capitalize;
+        transition: all 0.5s ease;
+        &::before{
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          content: "\f101";
+          margin-right: 10px;
+          color: $color4;
+        }
+        &:hover{
+          transform: translateX(10px);
+        }
+        a{
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+
+// start my work
+.my-work{
+  font-family: $mainFont;
+  @extend %boxShadow;
+  h6{
+    @extend %labelforSection;
+    background-color: $color5;
+    border: 1px solid $color5;
+  }
+  span{
+    @extend %slagOfSection;
+  }
+  .work{
+    .card{
+      width: 24%;
+      float: left;
+      margin-right: 1%;
+      margin-top: 10px;
+      a:first-of-type{
+        width: 30%;
+      }
+      a{
+        width: 20%;
+      }
+      .fa-thumbs-up{
+       @extend %like;
+      }
+      strong{
+        @extend %strong;
+      }
+    }
+  }
+  .work2{
+    .card{
+      width: 24%;
+      float: right;
+      margin-right: 1%;
+      margin-top: 10px;
+    }
+  }
+}
+
+// start comment
+.comment{
+  font-family: $mainFont;
+  @extend %boxShadow;
+  h6.comment-label{
+    @extend %labelforSection;
+    background-color: $color6;
+    border: 1px solid $color6;
+  }
+  span{
+    @extend %slagOfSection;
+  }
+  .comment-container{
+    height: 250px;
+    overflow-y: scroll;
+    .comme{
+      border: 1px solid #DDD;
+      padding-left: 10px;
+      padding-top: 10px;
+      text-transform: capitalize;
+      border-radius: 5px;
+      margin-top: 10px;
+      h6{
+        color: $color6;
+        font-weight: bold;
+      }
+    }
+  }
+  .leave-comment{
+    margin-top: 20px;
+    input{
+      border-radius: 5px;
+      border: 1px solid #DDD;
+      padding: 10px;
+    }
+    input:nth-of-type(2){
+      width: 60%;
+    }
+    .sent-comment{
+      background-color: $color6;
+      border: 1px solid $color6;
+      color: #fff;
+    }
+  }
+ 
+}
+
+
+// start media qery
+@media(max-width: 800px){
+  .info{
+    .my-pic{
+      img{
+        width: 100%;
+        margin-bottom: -120px;
+      }
+    }
+    .cv-btn{
+      button{
+        height: 150px !important;
+      }
+    }
+  }
+  .my-work{
+    .work{
+      .card{
+        width: 49%;
+        float: left;
+        margin-right: 1%;
+      }
+    }
+    .work2{
+      .card{
+        width: 49%;
+        float: right;
+        margin-right: 1%;
+      }
+    }
+  }
+}
+
+@media(max-width: 576px){
+  .info{
+    .my-pic{
+      img{
+        width: 100%;
+        margin-bottom: -100px;
+      }
+    }
+    .info-slag, .info-name{
+      height: 100px;
+      h6{
+        line-height: 100px;
+        font-size: 30px;
+      }
+    }
+    .cv-btn{
+      button{
+        height: 100px !important;
+      }
+    }
+    .cv-btn{
+      button{
+        height: 100px !important;
+      }
+    }
+  }
+
+  .experince{
+    .ex, .cirtificate{
+      width: 100%;
+      float: none;
+    }
+  }
+
+  .my-work{
+    .work{
+      .card{
+        width: 100%;
+        float: none;
+      }
+    }
+    .work2{
+      .card{
+        width: 100%;
+        float: none;
+      }
+    }
+  }
+}
+
+
+.nav-sticky{
+  position: sticky;
+  top: 0;
+}
+
+%overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  opacity: 0.3;
+  background-color: #000;
+}
+
+%infoh6Style{
+  margin-left: 20px;
+  color: #fff;
+}
+
+%navHeight{
+  height: 150px;
+}
+
+%boxShadow{
+  padding:0 1.5rem 1.5rem 1.5rem;
+  border: 1px solid #DDD;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+  border-radius: .25rem;
+  background-color: #fff;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+%labelforSection{
+  font-family: $mainFont;
+  margin-left: -24.5px !important;
+  border-top: 0;
+  display: inline-block;
+  font-size: 25px;
+  padding: 15px;
+  color: #fff;
+}
+
+%slagOfSection{
+  font-family: $mainFont;
+  letter-spacing: 10px;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 25px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+%fontAwesomeBeforeLi
+{
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f303";
+  width: 30px;
+  height: 30px;
+  left: -16px;
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+  border-radius: 50%;
+  margin-top: -3px;
+  background-color: $color2;
+}
+
+%progresslabel{
+  position: absolute;
+  top: 105px;
+}
+
+%like{
+  color: $color5;
+  border: 1px solid $color5;
+  width: 20%;
+  padding: .375rem .75rem;
+  height: 36px;
+  background-color: $color5;
+  color: #fff;
+  border-radius: 5px;
+  text-align: center !important;
+}
+
+%strong{
+  display: inline-block;
+  margin-left: 5px;
+  color: $color5;
+  border: 1px solid $color5;
+  width: 20%;
+  padding: .250rem .74rem;
+  height: 36px;
+  color: #000;
+  border-radius: 5px;
+  text-align: center !important;
+}
